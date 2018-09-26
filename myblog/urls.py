@@ -16,6 +16,6 @@ __author__ = 'Administrator'
 from django.urls import path, re_path
 from  . import  views
 urlpatterns = [
-    path('blog_title/', views.blog_title),
-    re_path('blog_title/(?P<article_id>[0-9]+)/', views.blog_article),
+    path('blog_title/', views.blog_title ,name = 'blog'),
+    re_path('blog_title/(?P<article_id>[0-9]+)/', views.blog_article ,name = 'blog2'),
 ]

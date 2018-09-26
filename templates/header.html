@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<div class="container">
+    <nav class="navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand"> <img src="{% static '/images/gofer.jpg' %}" width="200"> </a>
+        </div>
+    </nav>
+    <div>
+        <ul class="nav navbar-nav" role="navigation">
+            <li><a href="{% url 'blog'  %}">博客{% url 'blog' %}</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">登陆</a></li>
+        </ul>
+    </div>
+</div>
