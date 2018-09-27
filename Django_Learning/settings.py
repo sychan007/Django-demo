@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mysite',
     'myblog',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Django_Learning.urls'
+
+LOGIN_REDIRECT_URL = '/myblog/blog_title/'
 
 TEMPLATES = [
     {
